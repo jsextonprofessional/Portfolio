@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+/* body{
+    background-image: url("../assets/Portfolio_Text_Background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.yontainer {
+    display: flex;
+    min-height: 800px;
+    min-width: 500px;    
+}
+
+.container-fluid{
+    min-height: 820px;
+}
+
+.yolumn {
+    flex: 1;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+main {
+    margin: 0 auto;
+    min-height: 200px;
+    min-width: 70%;
+}
+
+.yox {
+    min-width: 70%;
+    height: 400px;
+    vertical-align: center;
+}
+
+nav {
+    border: 2p solid black;
+}
+
+#big-boy {
+    color: rgb(253, 246, 246);
+    text-shadow: 20px 20px 1px black;
+    font-weight: bold;
+    font-size: 150px;
+    position: fixed;
+    text-decoration: none;
+}
+
+#big-boy:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 20px 20px 0px rgb(253, 246, 246);
+    font-weight: bold;
+    font-size: 160px;
+    position: fixed;
+    text-decoration: underline;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+
+#acheone {
+    text-shadow: black 10px 10px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: ;
+}
